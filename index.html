@@ -9,30 +9,38 @@
       <h1>Apocalypse OS</h1>
       <section>
         <h2>What is Apocalypse OS ?</h2>
-        <p>Apocalypse OS is an tailored ArchLinux distribution for
-        hacking and software defined audio (SDR). It main focus is to
-        provide an Raspberry PI installation media to build a
-        rugged CyberDeck computer with the tools of your needs.</p>
+        <p>
+          Apocalypse OS is an tailored ArchLinux distribution for
+          hacking and software defined audio (SDR). It main focus is to
+          provide an Raspberry PI installation media to build a
+          rugged CyberDeck computer with the tools of your needs.
+        </p>
       </section>
+
       <section>
         <h2>Repository</h2>
-        <p>Apocalypse OS repository setup.  Create the following
+        <p>
+          Apocalypse OS repository setup.  Create the following
           file <code>/etc/pacman.d/apocos.mirrorlist</code> with
           following content:
-          <pre><code>
+        </p>  
+        <pre><code>
 #
 # Apocalypse OS Mirrorlist
 #
 Server = https://prepperarch.github.io/apocos-repo/$arch
-          </code></pre>
+        </code></pre>
+        <p>
           And add the repo to <code>/etc/pacman.conf</code> as:
+        </p>
 
           
-          <pre><code>
+        <pre><code>
 [apocos]
 SigLevel = Optional TrustAll
 Include = /etc/pacman.d/apocos.mirrorlist
-          </code></pre>
+        </code></pre>
+        <p>
           Update the repositories using the <code>pacman -Sy</code>
           and then install the packages you are interested in.
         </p>
