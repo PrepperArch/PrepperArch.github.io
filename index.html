@@ -12,20 +12,22 @@
         <p>Apocalypse OS repository setup.  Create the following
           file <code>/etc/pacman.d/apocos.mirrorlist</code> with
           following content:
-          <code>
-	    <p>
+          <pre>
+	    <code>
             #
             # Apocalypse OS Mirrorlist
             #
             Server = https://prepperarch.github.io/apocos-repo/$arch
-	    </p>
-          </code>
+	    </code>
+          </pre>
           And add the repo to <code>/etc/pacman.conf</code> as:
-          <code>
+          <pre>
+		<code>  
             [apocos]
             SigLevel = Optional TrustAll
 	    Include = /etc/pacman.d/apocos.mirrorlist
-          </code>
+	  </code>
+          </pre>
           Update the repositories using the <code>pacman -Sy</code>
           and then install the packages you are interested in.
         </p>
